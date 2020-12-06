@@ -6,6 +6,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
+  width: 100%;
 }
 
 .header__logo {
@@ -58,12 +59,12 @@
   font-weight: 800;
 }
 
-.header__optionBasket{
+.header__optionBasket {
   display: flex;
   align-items: center;
   color: white;
 }
 
-.header__basketCount{
+.header__basketCount {
   margin: 0 5px;
 }

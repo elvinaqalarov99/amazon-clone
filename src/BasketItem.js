@@ -2,6 +2,7 @@ import React from "react";
 import "./BasketItem.css";
 import { useStateValue } from "./StateProvider";
 function BasketItem(props) {
+  // eslint-disable-next-line
   const [{ basket }, dispatch] = useStateValue();
   const removeFromBasket = () => {
     dispatch({
@@ -25,7 +26,9 @@ function BasketItem(props) {
               return <p>⭐</p>;
             })}
           </div>
-          <button onClick={removeFromBasket}>Remove from the basket</button>
+          {!props.hidden && (
+            <button onClick={removeFromBasket}>Remove from the basket</button>
+          )}
         </div>
       </div>
     </div>

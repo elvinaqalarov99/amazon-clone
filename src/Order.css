@@ -1,0 +1,9 @@
+.order__total{
+    text-align: right;
+}
+
+.order{
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+}
